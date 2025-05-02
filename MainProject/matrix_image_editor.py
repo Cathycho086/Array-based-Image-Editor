@@ -139,7 +139,6 @@ class MatrixImgEdit():
         """Rotate an array-based image."""
         coords = []
         height = self.image.shape[0]
-        theta_deg = 30
 
         # Time consuming even on GPU but workaround is too complicated for current level.
         for row, col in cp.ndindex(self.image.shape):
