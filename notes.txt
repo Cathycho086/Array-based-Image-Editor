@@ -1,0 +1,28 @@
+🔧 Basic Building Blocks
+Component	Use
+tk.Label	Display text or images
+tk.Button	Clickable button
+tk.Entry	Single-line text input
+tk.Text	Multi-line text input
+tk.Frame	Container for grouping widgets
+tk.Checkbutton	Checkbox
+tk.Radiobutton	Select one option from several
+
+🧩 grid() in Tkinter
+grid() is a geometry manager that lets you arrange widgets in a table-like structure—rows and columns—inside a container (like a Frame or the main root window).
+📌 In this line:
+mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+# The sticky parameter tells Tkinter how to stretch or align the mainframe inside its grid cell.
+This is especially useful if:
+You’re working with resizable windows.
+You want things like a Frame, Label, or Text widget to grow and adapt.
+
+for ___init___:
+from tkinter import *
+from tkinter import ttk
+
+root = Tk()
+root.title = ("sample")  # self=='root'
+
+# Creating a content frame.
+mainframe = ttk.Frame(root, padding='1 1 1 1') #name of 'mother' frame==mainframe #padding->?
